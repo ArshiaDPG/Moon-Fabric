@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "moon",
+  "version": "${version}",
+
+  "name": "Moon",
+  "description": "",
+  "authors": [],
+  "contact": {},
+
+  "license": "MIT",
+  "icon": "assets/moon/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "net.digitalpear.moon.MoonDataGeneration"
+    ],
+    "main": [
+      "net.digitalpear.moon.Moon"
+    ]
+  },
+
+          "mixins": [
+        "moon.mixins.json"
+      ],
+    
+  "depends": {
+    "fabricloader": ">=0.14.21",
+              "fabric": "*",
+          "minecraft": "1.20.1"
+  }
+}
